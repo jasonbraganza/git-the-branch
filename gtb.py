@@ -2,6 +2,10 @@ from git import Repo
 
 
 def main():
+    """
+    Uses GitPython to figure out local branches and print them out.
+    Has a blanket catch for any exceptions
+    """
     try:
         repo = Repo()
         print("Local Branches in this repo are: ")
