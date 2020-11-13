@@ -10,3 +10,7 @@ This is a play project for me to get familiar with GitPython.
 #### Usage
 Just run the Python file, with a, `python /path/to/gtb.py`  
 And it will tell you what local git branches exist in your current folder.
+
+#### License
+Git-the-Branch is distributed under the MIT License.  
+It depends on GitPython which is distributed under the BSD 3-Clause "New" or "Revised" License. (copy in the Licenses sub-directory)
