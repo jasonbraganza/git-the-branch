@@ -20,4 +20,4 @@ Git-the-Branch is distributed under the MIT License.
 
 
 ### Acknowledgements
-It depends on GitPython which is distributed under the BSD 3-Clause "New" or "Revised" License. (copy in the Licenses sub-directory)
+Git-the-Branch depends on GitPython which is distributed under the BSD 3-Clause "New" or "Revised" License. (copy in the Licenses sub-directory)
