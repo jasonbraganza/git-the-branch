@@ -7,10 +7,17 @@ This is a play project for me to get familiar with GitPython.
 - Requires Python 3.6+
 - Requires that you have the GitPython package installed (see requirements.txt).  
 
-#### Usage
-Just run the Python file, with a, `python /path/to/gtb.py`  
+### Installation & Use   
+- Create a virtual env for yourself in the git-the-branch folder. - `python3 -m venv venv`  
+- Activate the virtual env - `venv/bin/activate`  
+- Install the GitPython package - `pip install gitpython`  
+- Then just run the Python file, with a, `python /path/to/gtb.py`  
+  
 And it will tell you what local git branches exist in your current folder.
 
 #### License
 Git-the-Branch is distributed under the MIT License.  
+
+
+### Acknowledgements
 It depends on GitPython which is distributed under the BSD 3-Clause "New" or "Revised" License. (copy in the Licenses sub-directory)
