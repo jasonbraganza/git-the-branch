@@ -1,3 +1,6 @@
+"""
+First iteration of this program. Have kept it around to see progress :)
+"""
 from git import Repo
 
 
