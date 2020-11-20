@@ -9,39 +9,6 @@ def main():
 
     head_list = r.heads
 
-    head_list
-
-    test_item = head_list[4]
-
-    type(test_item)
-
-    log_of_test_item = test_item.log()
-
-    len(log_of_test_item)
-
-    for each_item in log_of_test_item:
-        print(each_item)
-
-    last_log_item = log_of_test_item[-1]
-
-    last_log_item.actor
-
-    last_log_item.message
-
-    last_log_item.newhexsha
-
-    print(
-        f"{last_log_item.time[0]}\t{last_log_item.newhexsha}\t{test_item}\t{last_log_item.actor}"
-    )
-
-    printlog = {}
-    for each_head in head_list:
-        printlog[each_head.log()[-1].time[0]] = each_head.log()[-1]
-    printlog
-
-    for key in reversed(sorted(printlog.keys())):
-        print(f"{key}: {printlog[key]}")
-
     printlog = {}
     collect_log_details = namedtuple(
         "collect_log_details",
@@ -67,9 +34,10 @@ def main():
         printlog[commit_date_local] = log_details
 
     print_date_format = "%a, %Y-%m-%d %H:%M"
-    print(
-        f'{"Date":<20s}\t{"Commit Hash":<15s}{"Branch":<20s}\t{"Author Name":<25s}{"Commit Message"}'
-    )
+    print_header = f'{"Date":<20s}\t{"Commit Hash":<15s}{"Branch":<20s}\t{"Author Name":<25s}{"Commit Message"}\n'
+
+    print(print_header)
+
     for key in reversed(sorted(printlog)):
         print_date = key.strftime(print_date_format)
         print(
