@@ -40,7 +40,7 @@ def main():
 
         # Templates to generate time (in sane, readable terms) and output.
         print_date_format = "%a, %Y-%m-%d %H:%M"
-        print_header = f'{"Date":<20s}\t{"Commit Hash":<15s}\t{"Author Name":<25s}{"Branch":<25s}{"Commit Message"}\n'
+        print_header = f'{"Date":<20s}\t{"Commit Hash":<15s}\t{"Author Name":<25s}{"Branch":<40s}{"Commit Message"}\n'
 
         # Finally present what we fished from the repo, to the user.
         print(print_header)
@@ -48,7 +48,7 @@ def main():
         for key in reversed(sorted(printlog)):
             print_date = key.strftime(print_date_format)
             print(
-                f"{print_date:<20s}\t{printlog[key].sha_num[:7]:<15s}\t{str(printlog[key].committer_name):<25s}{printlog[key].branch_name:<25s}{printlog[key].commit_message}"
+                f"{print_date:<20s}\t{printlog[key].sha_num[:7]:<15s}\t{str(printlog[key].committer_name):<25s}{printlog[key].branch_name:<40s}{printlog[key].commit_message}"
             )
     except:
         print("No git repo found in this folder")
