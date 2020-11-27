@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "git-the-branch"
+name = "git_the_branch"
 version = "0.1.0"
 description = ""
 authors = ["Mario Jason Braganza <jason@janusworx.com>"]
