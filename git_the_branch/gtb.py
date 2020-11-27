@@ -4,7 +4,7 @@ from datetime import datetime
 from git import Repo
 
 
-def main():
+def gtb():
 
     # Set up house. Creating a dict to hold the details we need, and a named tuple for easy access
     printlog = {}
@@ -55,4 +55,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    gtb()

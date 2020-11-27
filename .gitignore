@@ -1,3 +1,5 @@
 .venv/
 .vscode/
 dist/
+git_the_branch/__pycache__/
+/__pycache__/
