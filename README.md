@@ -3,6 +3,10 @@ Do you want an overkill Python script that will tell you what local git branches
 Git-the-Branch will do it for you.  
 This is a play project for me to get familiar with GitPython.  
 
+
+Discard everything for now. This section will be update shortly!
+
+---  
 #### Requirements  
 - Requires Python 3.6+
 - Requires that you have the GitPython package installed (see requirements.txt).  
